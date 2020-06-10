@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .square {
+            color: white;
+            height: 50px;
+            width: 50px;
+        }
+
+        .one {
+            background-color: green;
+        }
+
+        .two {
+            background-color: blue;
+        }
+
+        .three {
+            background-color: purple;
+        }
+    </style>
+    <script>
+        // documentation HTMLInputElement: https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement
+
+
+        function handleSquareOneClick() {
+
+            // mission: put letter A into text box
+
+            // 1. get the text box object
+            var textBox = document.getElementById('my-textbox');
+
+            // 2. put the letter into the text box
+            textBox.value = 'a';
+        }
+
+        function handleSquareTwoClick() {
+            var textBox = document.getElementById('my-textbox');
+            textBox.value = 'b';
+            // mission: put letter B into text box
+
+        }
+
+        function handleSquareThreeClick() {
+
+            // mission: put letter C into text box
+
+
+            var textBox = document.getElementById('my-textbox')
+            textBox.value = 'c'
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <div class="square one" onclick="handleSquareOneClick()">
+            <p>A</p>
+        </div>
+        <br><br>
+        <input id="my-textbox" value="max" />
+    </div>
+
+    <br><br>
+
+    <div class="square two" onclick=handleSquareTwoClick()>
+        <p>B</p>
+    </div>
+    <br><br>
+    <div class="square three" onclick=handleSquareThreeClick()>
+        <p>C</p>
+    </div>
+</body>
+
+</html>
