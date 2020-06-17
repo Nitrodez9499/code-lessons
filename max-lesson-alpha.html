@@ -20,6 +20,14 @@
         .three {
             background-color: purple;
         }
+
+        .four {
+            background-color: red;
+        }
+
+        .five {
+            background-color: orange;
+        }
     </style>
     <script>
         // documentation HTMLInputElement: https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement
@@ -52,6 +60,23 @@
             var textBox = document.getElementById('my-textbox')
             textBox.value = 'c'
         }
+
+        function handleSquareFourClick() {
+
+
+            console.log('red square #4 clicked')
+            var textBox = document.getElementById('my-textbox')
+            textBox.value = 'x'
+        }
+
+        function handleSquareFiveClick() {
+
+            // mission: put letter C into text box
+
+            console.log('orange square #5 clicked')
+            var textBox = document.getElementById('my-textbox')
+            textBox.value = 'y'
+        }
     </script>
 </head>
 
@@ -73,6 +98,17 @@
     <div class="square three" onclick=handleSquareThreeClick()>
         <p>C</p>
     </div>
-</body>
+    <br><br>
 
+    <br><br>
+    <div class="square four" onclick="handleSquareFourClick()">
+        <p>X</p>
+    </div>
+    <br><br>
+
+    <br><br>
+    <div class="square five" onclick="handleSquareFiveClick()">
+        <p>Y</p>
+    </div>
+</body>
 </html>
