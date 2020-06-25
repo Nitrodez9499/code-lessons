@@ -33,56 +33,18 @@
         // documentation HTMLInputElement: https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement
 
 
-        function handleSquareOneClick() {
-
-            // mission: put letter A into text box
-            console.log('green square #1 clicked')
-            // 1. get the text box object
-            var textBox = document.getElementById('my-textbox');
-
-            // 2. put the letter into the text box
-            textBox.value = 'a';
-        }
-
-        function handleSquareTwoClick() {
-            var textBox = document.getElementById('my-textbox');
-            textBox.value = 'b';
-            console.log('blue square #2 clicked')
-            // mission: put letter B into text box
-
-        }
-
-        function handleSquareThreeClick() {
-
-            // mission: put letter C into text box
-
-            console.log('purple square #3 clicked')
+       
+        function theBoxesHandler(boxName){
+            console.log("The Iniewicz " + boxName)
             var textBox = document.getElementById('my-textbox')
-            textBox.value = 'c'
-        }
-
-        function handleSquareFourClick() {
-
-
-            console.log('red square #4 clicked')
-            var textBox = document.getElementById('my-textbox')
-            textBox.value = 'x'
-        }
-
-        function handleSquareFiveClick() {
-
-            // mission: put letter C into text box
-
-            console.log('orange square #5 clicked')
-            var textBox = document.getElementById('my-textbox')
-            textBox.value = 'y'
+            textBox.value = boxName;
         }
     </script>
 </head>
 
 <body>
     <div>
-        <div class="square one" onclick="handleSquareOneClick()">
+        <div class="square one" onclick="theBoxesHandler('A')">
             <p>A</p>
         </div>
         <br><br>
@@ -91,24 +53,25 @@
 
     <br><br>
 
-    <div class="square two" onclick=handleSquareTwoClick()>
+    <div class="square two" onclick="theBoxesHandler('B')">
         <p>B</p>
     </div>
     <br><br>
-    <div class="square three" onclick=handleSquareThreeClick()>
+    <div class="square three" onclick="theBoxesHandler('C')">
         <p>C</p>
     </div>
     <br><br>
 
     <br><br>
-    <div class="square four" onclick="handleSquareFourClick()">
+    <div class="square four" onclick="theBoxesHandler('X')">
         <p>X</p>
     </div>
     <br><br>
 
     <br><br>
-    <div class="square five" onclick="handleSquareFiveClick()">
+    <div class="square five" onclick="theBoxesHandler('Y')">
         <p>Y</p>
     </div>
 </body>
+
 </html>
