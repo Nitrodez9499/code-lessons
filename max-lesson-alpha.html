@@ -2,45 +2,9 @@
 <html>
 
 <head>
-    <style>
-        .square {
-            color: white;
-            height: 50px;
-            width: 50px;
-        }
-
-        .one {
-            background-color: green;
-        }
-
-        .two {
-            background-color: blue;
-        }
-
-        .three {
-            background-color: purple;
-        }
-
-        .four {
-            background-color: red;
-        }
-
-        .five {
-            background-color: orange;
-        }
-    </style>
-    <script>
-        // documentation HTMLInputElement: https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement
-
-
-       
-        function theBoxesHandler(boxName){
-            console.log("The Iniewicz " + boxName)
-            var textBox = document.getElementById('my-textbox')
-            textBox.value = boxName;
-        }
-    </script>
-</head>
+    <link rel="stylesheet" type="text/css" href="./css/lesson-alpha-stylesheet.css">
+    <script src="javascript/lesson-alpha-javascript.js"></script>
+ </head>
 
 <body>
     <div>
@@ -71,6 +35,10 @@
     <br><br>
     <div class="square five" onclick="theBoxesHandler('Y')">
         <p>Y</p>
+    </div>
+    <br><br>
+    <div class="square six" onclick="letterReverser('xam')">
+        <p>Z</p>
     </div>
 </body>
 
